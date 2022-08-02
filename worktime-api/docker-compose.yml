@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+    worktime:
+        image: postgres
+        container_name: database_worktime
+        restart: always
+        ports:
+            - 65432:5432
+        environment:
+            - POSTGRES_USER=docker
+            - POSTGRES_PASSWORD=worktime2022
+            - POSTGRES_DB=worktime
+        volumes:
+            - pgdata:/data/postgres
+
+volumes:
+    pgdata:
