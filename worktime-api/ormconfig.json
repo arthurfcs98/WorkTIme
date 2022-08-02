@@ -1,0 +1,18 @@
+{
+    "type": "postgres",
+    "port": 65432,
+    "host":"localhost",
+    "username": "docker",
+    "password": "worktime2022",
+    "database": "worktime",
+    "entities": [
+        "./src/modules/**/entities/*.ts"
+    ],
+
+    "migrations": [
+        "./src/database/typeorm/migrations/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "./src/database/typeorm/migrations"
+    }
+}
