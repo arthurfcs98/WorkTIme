@@ -6,9 +6,19 @@ import { IUserRepository } from '../IUserRepository';
 
 class UserRepository implements IUserRepository {
     private repository: Repository<User>;
+
+    private static INSTANCE: UserRepository;
+
     constructor() {
         this.repository = defaultDataSource.getRepository(User);
     }
+
+    public static getInstance(): UserRepository {
+        if (!UserRepository.INSTANCE)
+            UserRepository.INSTANCE = new UserRepository();
+        return UserRepository.INSTANCE;
+    }
+
     async create({
         id,
         name,
