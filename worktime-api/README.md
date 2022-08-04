@@ -43,15 +43,15 @@ O Usuario não pode começar uma nova sessão de trabalho caso ainda tenha algum
 
 # Gerar Relatório
 
-**RF**
+**RF**<br/>
 Deve ser possivel gerar um relatório das horas trablhadas por projeto <br/>
 Deve ser possivel gerar um relatório das horas trablhadas por determinada quantidade de dias <br/>
 
-**RFN**
+**RFN**<br/>
 O Relatório gerado devera ser um pdf<br/>
 Utilizar alguma biblioteca para geração do pdf<br/>
 Necessario mandar a senha para gerar um novo relatório. <br/>
 
-**RN**
+**RN**<br/>
 O Usuario não podera gerar um relatório caso nao tenha registros de horas trabalhadas em determinado projeto ou data<br/>
 Não deve ser possível gerar relatórios com espaço de tempo menor que 1 dia<br/>
